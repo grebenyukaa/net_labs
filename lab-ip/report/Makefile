@@ -12,6 +12,7 @@ L2D=utils/lab2dot
 LAB=../net
 
 TEX=tex
+TEXCOMMON = ../../tex/common
 INCLUDES = $(TEX)/includes
 
 .PHONY: clean
@@ -33,7 +34,7 @@ $(INCLUDES)/%.pdf : $(INCLUDES)/%.tex
 	$(PDFLATEX) -output-directory=$(INCLUDES) $<
 
 # Основная цель сборки --- отчет
-$(PDF) : $(TEX)/report.tex $(TEX)/header.tex $(INCLUDES)/network_gv.pdf
+$(PDF) : $(TEX)/report.tex $(TEXCOMMON)/header.tex $(INCLUDES)/network_gv.pdf
 	cd $(TEX) && $(PDFLATEX) report.tex && $(PDFLATEX) report.tex && cp $(PDF) ..
 
 # Удаление ВСЕХ временных файлов

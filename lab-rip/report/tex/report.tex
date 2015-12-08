@@ -1,9 +1,9 @@
 \documentclass[a4paper,12pt]{article}
 
-\input{header.tex}
+\input{../../../tex/common/header.tex}
 
 \title{Отчёт по лабораторной работе \\ <<Динамическая IP-маршрутизация>>}
-\author{(Здесь писать Ф.~И.~О)}
+\author{Гребенюк Александр Андреевич}
 
 \begin{document}
 
@@ -24,39 +24,52 @@
 \label{fig:network}
 \end{figure}
 
-Перечень узлов, на которых используется динамическая IP-маршрутизация: ...
+
+Перечень узлов, на которых используется динамическая IP-маршрутизация: 
+\begin{itemize}
+  \item \textbf{r1-5},
+  \item \textbf{wsp1}
+\end{itemize}
 
 
-\subsection{Назначение IP-адресов}
+\section{Назначение IP-адресов}
+\begin{itemize}
+\item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r1}.
+\lstinputlisting{../../net/r1/etc/network/interfaces}
+\item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r2}.
+\lstinputlisting{../../net/r2/etc/network/interfaces}
+\item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r3}.
+\lstinputlisting{../../net/r3/etc/network/interfaces}
+\item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r4}.
+\lstinputlisting{../../net/r4/etc/network/interfaces}
+\item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r5}.
+\lstinputlisting{../../net/r5/etc/network/interfaces}
 
-Ниже приведён файл сетевой настройки  маршрутизатора (указать, какого).
-
-\begin{Verbatim}
-Сюда нужно поместить характерный /etc/network/interfaces маршрутизатора
-\end{Verbatim}
-
-Ниже приведён файл сетевой настройки рабочей станции (указать, какой).
-
-\begin{Verbatim}
-Сюда нужно поместить характерный /etc/network/interfaces рабочей станции
-\end{Verbatim}
+\item Ниже приведён файл настройки протокола IP рабочей станции \textbf{ws2}.
+\lstinputlisting{../../net/ws2/etc/network/interfaces}
+\item Ниже приведён файл настройки протокола IP рабочей станции \textbf{wsp1}.
+\lstinputlisting{../../net/wsp1/etc/network/interfaces}
+\end{itemize}
 
 
 
 \subsection{Настройка протокола RIP}
+\begin{itemize}
+\item Ниже приведен файл \Code{/etc/quagga/ripd.conf} маршрутизатора \textbf{r1}.
+\lstinputlisting{../../net/r1/etc/quagga/ripd.conf}
+\item Ниже приведен файл \Code{/etc/quagga/ripd.conf} маршрутизатора \textbf{r2}.
+\lstinputlisting{../../net/r2/etc/quagga/ripd.conf}
+\item Ниже приведен файл \Code{/etc/quagga/ripd.conf} маршрутизатора \textbf{r3}.
+\lstinputlisting{../../net/r3/etc/quagga/ripd.conf}
+\item Ниже приведен файл \Code{/etc/quagga/ripd.conf} маршрутизатора \textbf{r4}.
+\lstinputlisting{../../net/r4/etc/quagga/ripd.conf}
+\item Ниже приведен файл \Code{/etc/quagga/ripd.conf} маршрутизатора \textbf{r5}.
+\lstinputlisting{../../net/r5/etc/quagga/ripd.conf}
+\end{itemize}
 
-Ниже приведен файл \Code{/etc/quagga/ripd.conf} маршрутизатора (указать, какого).
 
-\begin{Verbatim}
-Сюда нужно поместить конфигурацию ripd
-\end{Verbatim}
-
-
-Ниже приведен файл \Code{/etc/quagga/ripd.conf} рабочий станции, связанной с несколькими маршрутизаторами (указать, какой).
-
-\begin{Verbatim}
-Сюда нужно поместить конфигурацию ripd
-\end{Verbatim}
+Ниже приведен файл \Code{/etc/quagga/ripd.conf} рабочий станции, связанной с несколькими маршрутизаторами \textbf{wsp1}.
+\lstinputlisting{../../net/r5/etc/network/interfaces}
 
 
 \section{Проверка настройки протокола RIP}

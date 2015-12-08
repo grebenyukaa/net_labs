@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Arch Linux) (preloaded format=xelatex 2015.10.21)  8 DEC 2015 03:07
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Arch Linux) (preloaded format=xelatex 2015.10.21)  8 DEC 2015 20:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,7 +22,8 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (./header.tex
+)
+(../../../tex/common/header.tex
 (/usr/share/texmf-dist/tex/latex/polyglossia/polyglossia.sty
 Package: polyglossia 2015/08/06 v1.42.0 Alternative to Babel for XeLaTeX and Lu
 aLaTeX
@@ -1325,12 +1326,12 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 196.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 196.
  ) 
 Here is how much of TeX's memory you used:
- 37061 strings out of 493706
- 746255 string characters out of 6150887
- 1032988 words of memory out of 5000000
+ 37062 strings out of 493706
+ 746313 string characters out of 6150887
+ 1033029 words of memory out of 5000000
  39803 multiletter control sequences out of 15000+600000
  8909 words of font info for 73 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 57i,16n,76p,10445b,1735s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,16n,76p,10465b,1735s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on report.pdf (12 pages).
