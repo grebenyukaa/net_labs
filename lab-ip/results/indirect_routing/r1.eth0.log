@@ -1,0 +1,7 @@
+root@r1:~# cat eth0.log 
+ca:a0:5b:a0:0e:20 > ff:ff:ff:ff:ff:ff, ethertype ARP (0x0806), length 42: Request who-has 10.0.10.11 tell 10.0.10.12, length 28
+be:14:9b:41:0f:21 > ca:a0:5b:a0:0e:20, ethertype ARP (0x0806), length 42: Reply 10.0.10.11 is-at be:14:9b:41:0f:21, length 28
+ca:a0:5b:a0:0e:20 > be:14:9b:41:0f:21, ethertype IPv4 (0x0800), length 98: 10.0.30.2 > 10.0.40.2: ICMP echo request, id 1814, seq 1, length 64
+be:14:9b:41:0f:21 > ca:a0:5b:a0:0e:20, ethertype IPv4 (0x0800), length 98: 10.0.40.2 > 10.0.30.2: ICMP echo reply, id 1814, seq 1, length 64
+be:14:9b:41:0f:21 > ca:a0:5b:a0:0e:20, ethertype ARP (0x0806), length 42: Request who-has 10.0.10.12 tell 10.0.10.11, length 28
+ca:a0:5b:a0:0e:20 > be:14:9b:41:0f:21, ethertype ARP (0x0806), length 42: Reply 10.0.10.12 is-at ca:a0:5b:a0:0e:20, length 28

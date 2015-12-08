@@ -1,0 +1,7 @@
+root@r3:~# cat eth1.log 
+76:e5:80:0f:a1:02 > ff:ff:ff:ff:ff:ff, ethertype ARP (0x0806), length 42: Request who-has 10.0.40.2 tell 10.0.40.1, length 28
+42:70:9a:0b:39:80 > 76:e5:80:0f:a1:02, ethertype ARP (0x0806), length 42: Reply 10.0.40.2 is-at 42:70:9a:0b:39:80, length 28
+76:e5:80:0f:a1:02 > 42:70:9a:0b:39:80, ethertype IPv4 (0x0800), length 98: 10.0.30.2 > 10.0.40.2: ICMP echo request, id 1814, seq 1, length 64
+42:70:9a:0b:39:80 > 76:e5:80:0f:a1:02, ethertype IPv4 (0x0800), length 98: 10.0.40.2 > 10.0.30.2: ICMP echo reply, id 1814, seq 1, length 64
+42:70:9a:0b:39:80 > 76:e5:80:0f:a1:02, ethertype ARP (0x0806), length 42: Request who-has 10.0.40.1 tell 10.0.40.2, length 28
+76:e5:80:0f:a1:02 > 42:70:9a:0b:39:80, ethertype ARP (0x0806), length 42: Reply 10.0.40.1 is-at 76:e5:80:0f:a1:02, length 28

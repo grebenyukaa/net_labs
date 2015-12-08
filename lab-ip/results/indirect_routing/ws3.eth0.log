@@ -1,0 +1,5 @@
+root@ws3:~# cat eth0.log 
+66:8a:ed:66:77:c0 > c2:68:04:b4:74:58, ethertype IPv4 (0x0800), length 98: 10.0.30.2 > 10.0.50.2: ICMP echo request, id 1719, seq 1, length 64
+c2:68:04:b4:74:58 > ff:ff:ff:ff:ff:ff, ethertype ARP (0x0806), length 42: Request who-has 10.0.50.1 tell 10.0.50.2, length 28
+66:8a:ed:66:77:c0 > c2:68:04:b4:74:58, ethertype ARP (0x0806), length 42: Reply 10.0.50.1 is-at 66:8a:ed:66:77:c0, length 28
+c2:68:04:b4:74:58 > 66:8a:ed:66:77:c0, ethertype IPv4 (0x0800), length 98: 10.0.50.2 > 10.0.30.2: ICMP echo reply, id 1719, seq 1, length 64

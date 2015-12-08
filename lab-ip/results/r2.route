@@ -1,0 +1,5 @@
+10.0.10.0/24 dev eth0  proto kernel  scope link  src 10.0.10.12 
+10.0.20.0/24 via 10.0.10.11 dev eth0 
+10.0.30.0/24 dev eth1  proto kernel  scope link  src 10.0.30.32 
+10.0.40.0/24 via 10.0.10.11 dev eth0 
+10.0.50.0/24 via 10.0.30.34 dev eth1 
