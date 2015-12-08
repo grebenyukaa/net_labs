@@ -1,6 +1,0 @@
-7e:a6:65:cd:a1:ab > 96:e8:1f:21:5e:44, ethertype IPv4 (0x0800), length 98: (tos 0x0, ttl 64, id 32160, offset 0, flags [DF], proto ICMP (1), length 84)
-    10.0.30.2 > 10.0.40.2: ICMP echo request, id 1874, seq 1, length 64
-96:e8:1f:21:5e:44 > 7e:a6:65:cd:a1:ab, ethertype IPv4 (0x0800), length 126: (tos 0xc0, ttl 63, id 20446, offset 0, flags [none], proto ICMP (1), length 112)
-    10.0.10.11 > 10.0.30.2: ICMP time exceeded in-transit, length 92
-        (tos 0x0, ttl 1, id 32160, offset 0, flags [DF], proto ICMP (1), length 84)
-    10.0.30.2 > 10.0.40.2: ICMP echo request, id 1874, seq 1, length 64

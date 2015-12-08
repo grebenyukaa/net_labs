@@ -1,9 +1,0 @@
-root@r1:~# cat eth0.log 
-IP (tos 0x0, ttl 64, id 40191, offset 0, flags [none], proto ICMP (1), length 1028)
-    10.0.10.11 > 10.0.30.2: ICMP echo request, id 1865, seq 1, length 1008
-IP (tos 0x0, ttl 63, id 12026, offset 0, flags [+], proto ICMP (1), length 500)
-    10.0.30.2 > 10.0.10.11: ICMP echo reply, id 1865, seq 1, length 480
-IP (tos 0x0, ttl 63, id 12026, offset 480, flags [+], proto ICMP (1), length 500)
-    10.0.30.2 > 10.0.10.11: ip-proto-1
-IP (tos 0x0, ttl 63, id 12026, offset 960, flags [none], proto ICMP (1), length 68)
-    10.0.30.2 > 10.0.10.11: ip-proto-1

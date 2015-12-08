@@ -1,2 +1,0 @@
-service networking restart
-touch /etc/resolvconf/run/resolv.conf
