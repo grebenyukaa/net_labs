@@ -1,0 +1,7 @@
+root@r5:~/ripcatch# ip r
+10.0.10.0/24 dev eth0  proto kernel  scope link  src 10.0.10.15 
+10.0.20.0/24 dev eth1  proto kernel  scope link  src 10.0.20.25 
+10.0.30.0/24 via 10.0.10.13 dev eth0  proto zebra  metric 2 
+10.0.40.0/24 dev eth2  proto kernel  scope link  src 10.0.40.45 
+10.0.50.0/24 via 10.0.40.41 dev eth2  proto zebra  metric 2 
+10.0.60.0/24 via 10.0.40.41 dev eth2  proto zebra  metric 3 

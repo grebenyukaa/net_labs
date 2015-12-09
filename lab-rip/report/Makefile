@@ -5,16 +5,14 @@
 PDF=report.pdf
 
 # Используемые программы
-PDFLATEX = pdflatex -interaction=nonstopmode
-
-D2T=utils/dot2tex -f pgf  --crop --prog=neato
-# neato
-
+PDFLATEX = xelatex -interaction=nonstopmode -shell-escape
+D2T=utils/dot2tex -f tikz  --crop --prog=neato
 L2D=utils/lab2dot
 
 LAB=../net
 
 TEX=tex
+TEXCOMMON = ../../tex/common
 INCLUDES = $(TEX)/includes
 
 .PHONY: clean
@@ -36,10 +34,11 @@ $(INCLUDES)/%.pdf : $(INCLUDES)/%.tex
 	$(PDFLATEX) -output-directory=$(INCLUDES) $<
 
 # Основная цель сборки --- отчет
-$(PDF) : $(TEX)/report.tex $(TEX)/header.tex $(INCLUDES)/network_gv.pdf
+$(PDF) : $(TEX)/report.tex $(TEXCOMMON)/header.tex $(INCLUDES)/network_gv.pdf
 	cd $(TEX) && $(PDFLATEX) report.tex && $(PDFLATEX) report.tex && cp $(PDF) ..
 
 # Удаление ВСЕХ временных файлов
 clean:
 	find $(TEX)/ -regextype posix-egrep -type f ! -regex ".*\.(sty|tex|clo|cls|bib|bst|gitignore)" -exec $(RM) {} \; ;
+	rm graphs/network.gv
 

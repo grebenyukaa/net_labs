@@ -1,0 +1,7 @@
+root@r5:~/ripcatch# cat ripcatch.log | grep 16
+        AFI 2 addr 10.0.60.0/24, tag 0x0000, metric 16,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.60.0/24, tag 0x0000, metric 16,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.60.0/24, tag 0x0000, metric 16,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.60.0/24, tag 0x0000, metric 16,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.60.0/24, tag 0x0000, metric 16,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.60.0/24, tag 0x0000, metric 16,  nexthop: 0.0.0.0

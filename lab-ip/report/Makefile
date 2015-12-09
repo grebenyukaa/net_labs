@@ -5,7 +5,7 @@
 PDF=report.pdf
 
 # Используемые программы
-PDFLATEX = xelatex -interaction=nonstopmode
+PDFLATEX = xelatex -interaction=nonstopmode -shell-escape
 D2T=utils/dot2tex -f tikz  --crop --prog=neato
 L2D=utils/lab2dot
 

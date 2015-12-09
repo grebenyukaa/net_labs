@@ -383,10 +383,10 @@ def write_dot(gv_file, routers):
     with open(gv_file, "w") as gv:
         print >>gv, "graph G {"
         print >>gv, 'edge [len=1.5];' # for neato
-        print >>gv, 'node [shape=diamond, color="green4"];'
+        print >>gv, 'node [shape=diamond, color="green"];'
         for r in sorted(routers.keys()):
             if len(routers[r]) > 1:
-                print >>gv, r + ' [color="blue3"];'
+                print >>gv, r + ' [color="blue"];'
             else:
                 print >>gv, r + ";"
         print >>gv, 'node [shape=ellipse, color="brown"];'

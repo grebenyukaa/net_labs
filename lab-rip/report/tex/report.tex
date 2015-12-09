@@ -11,13 +11,15 @@
 
 \tableofcontents
 
+\clearpage
+
 \section{Настройка сети}
 
 \subsection{Топология сети}
 
 Топология сети и используемые IP-адреса показаны на рисунке~\ref{fig:network}.
 
-\begin{figure}
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{includes/network_gv.pdf}
 \caption{Топология сети}
@@ -31,24 +33,25 @@
   \item \textbf{wsp1}
 \end{itemize}
 
+\clearpage
 
 \section{Назначение IP-адресов}
 \begin{itemize}
 \item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r1}.
-\lstinputlisting{../../net/r1/etc/network/interfaces}
+\inputmintedbr{text}{../../net/r1/etc/network/interfaces}
 \item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r2}.
-\lstinputlisting{../../net/r2/etc/network/interfaces}
+\inputmintedbr{text}{../../net/r2/etc/network/interfaces}
 \item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r3}.
-\lstinputlisting{../../net/r3/etc/network/interfaces}
+\inputmintedbr{text}{../../net/r3/etc/network/interfaces}
 \item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r4}.
-\lstinputlisting{../../net/r4/etc/network/interfaces}
+\inputmintedbr{text}{../../net/r4/etc/network/interfaces}
 \item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r5}.
-\lstinputlisting{../../net/r5/etc/network/interfaces}
+\inputmintedbr{text}{../../net/r5/etc/network/interfaces}
 
 \item Ниже приведён файл настройки протокола IP рабочей станции \textbf{ws2}.
-\lstinputlisting{../../net/ws2/etc/network/interfaces}
+\inputmintedbr{text}{../../net/ws2/etc/network/interfaces}
 \item Ниже приведён файл настройки протокола IP рабочей станции \textbf{wsp1}.
-\lstinputlisting{../../net/wsp1/etc/network/interfaces}
+\inputmintedbr{text}{../../net/wsp1/etc/network/interfaces}
 \end{itemize}
 
 
@@ -56,89 +59,92 @@
 \subsection{Настройка протокола RIP}
 \begin{itemize}
 \item Ниже приведен файл \Code{/etc/quagga/ripd.conf} маршрутизатора \textbf{r1}.
-\lstinputlisting{../../net/r1/etc/quagga/ripd.conf}
+\inputmintedbr{text}{../../net/r1/etc/quagga/ripd.conf}
 \item Ниже приведен файл \Code{/etc/quagga/ripd.conf} маршрутизатора \textbf{r2}.
-\lstinputlisting{../../net/r2/etc/quagga/ripd.conf}
+\inputmintedbr{text}{../../net/r2/etc/quagga/ripd.conf}
 \item Ниже приведен файл \Code{/etc/quagga/ripd.conf} маршрутизатора \textbf{r3}.
-\lstinputlisting{../../net/r3/etc/quagga/ripd.conf}
+\inputmintedbr{text}{../../net/r3/etc/quagga/ripd.conf}
 \item Ниже приведен файл \Code{/etc/quagga/ripd.conf} маршрутизатора \textbf{r4}.
-\lstinputlisting{../../net/r4/etc/quagga/ripd.conf}
+\inputmintedbr{text}{../../net/r4/etc/quagga/ripd.conf}
 \item Ниже приведен файл \Code{/etc/quagga/ripd.conf} маршрутизатора \textbf{r5}.
-\lstinputlisting{../../net/r5/etc/quagga/ripd.conf}
+\inputmintedbr{text}{../../net/r5/etc/quagga/ripd.conf}
 \end{itemize}
 
 
 Ниже приведен файл \Code{/etc/quagga/ripd.conf} рабочий станции, связанной с несколькими маршрутизаторами \textbf{wsp1}.
-\lstinputlisting{../../net/r5/etc/network/interfaces}
+\inputmintedbr{text}{../../net/r5/etc/network/interfaces}
+
 
 
 \section{Проверка настройки протокола RIP}
+Вывод \textbf{traceroute} от \textbf{wsp1} до \textbf{ws2} при нормальной работе сети.
+\inputmintedbr{text}{../../results/wsp1-ws2.trace}
 
-Вывод \textbf{traceroute} от узла такого-то до такого-то при нормальной работе сети.
 
-\begin{Verbatim}
-Сюда нужно поместить вывод traceroute.
-\end{Verbatim}
+Вывод \textbf{traceroute} от узла \textbf{wsp1} до внешнего IP \textbf{8.8.8.8}
+\inputmintedbr{text}{../../results/wsp1-world.trace}
 
-Вывод \textbf{traceroute} от узла такого-то до внешнего IP (195.19.38.2 сгодится).
 
-\begin{Verbatim}
-Сюда нужно поместить вывод traceroute.
-\end{Verbatim}
+Модифицированный udp-клиент для перехвата RIP-сообщений:
+\inputmintedbr{c}{../../net/r5/root/ripcatch/ripcatch.c}
 
-Вывод сообщения RIP.
 
-\begin{Verbatim}
-Перехваченное сообщение RIP от любого маршрутизатора
-\end{Verbatim}
+Перехваченный обмен сообщениями:
+\inputmintedbr{text}{../../results/r5.rip.log}
 
-Вывод таблицы RIP.
 
-\begin{Verbatim}
-Таблица RIP
-\end{Verbatim}
+Таблица RIP:
+\inputmintedbr{text}{../../results/r5.vtysh}
 
-Вывод таблицы маршрутизации.
 
-\begin{Verbatim}
-Таблица маршрутизации
-\end{Verbatim}
+Таблица маршрутизации:
+\inputmintedbr{text}{../../results/r5.rt}
+
+
 
 \section{Расщепленный горизонт и испорченные обратные обновления}
+Расщепленный горизонт + испорченные обратные обновления
+\inputmintedbr{text}{../../results/r5.sh.pr}
 
-Поместить сюда вывод сообщения одного и того же маршрутизатор с включенным расщ. горизонтом, с включенными испорченными обновлениями, с отключённым расщ. гор.
 
-Объяснить разницу.
+Расщепленный горизонт - испорченные обратные обновления
+\inputmintedbr{text}{../../results/r5.sh}
 
-Вернуть настройки в исходное состояние (включенный без испорченных).
+
+Расщепленный горизонт отключен
+\inputmintedbr{text}{../../results/r5.pr}
+
+
 
 \section{Имитация устранимой поломки в сети}
+Отключаем \textbf{r5}
 
-Какой маршрутизатор выключили?
 
-Вывод таблицы RIP непосредственно перед истечением таймера устаревания (на маршрутизаторе-соседе отключенного).
+Вывод таблицы RIP непосредственно перед истечением таймера устаревания (на маршрутизаторе \textbf{r1}).
+\inputmintedbr{text}{../../results/r1.r5.route}
 
-\begin{Verbatim}
-Таблица RIP
-\end{Verbatim}
 
 Перестроенная таблица на этом же маршрутизаторе
-
-\begin{Verbatim}
-Таблица RIP
-\end{Verbatim}
+\inputmintedbr{text}{../../results/r1.no-r5.route}
 
 
-Вывод \textbf{traceroute} от узла такого-то до такого-то после того, как служба RIP перестроила таблицы маршрутизации.
+Вывод \textbf{traceroute} от \textbf{ws1} до \textbf{r1} до отключения \textbf{r5}
+\inputmintedbr{text}{../../results/wsp1-r1.r5.trace}
 
-\begin{Verbatim}
-Сюда нужно поместить вывод traceroute после "поломки".
-\end{Verbatim}
+
+Вывод \textbf{traceroute} от \textbf{ws1} до \textbf{r1} после отключения \textbf{r5}
+\inputmintedbr{text}{../../results/wsp1-r1.no-r5.trace}
+
+
 
 \section{Имитация неустранимой поломки в сети}
+Отключаем \textbf{r2}
 
-Какой маршрутизатор выключили? (Теперь у нас нет связанной сети)
 
-Далее поместить таблицы протокола RIP, где видна 16-ая метрика, и сообщения протокола RIP с 16-ой метрикой.
+Таблица на маршрутизаторе \textbf{r5}
+\inputmintedbr{text}{../../results/r5.r2-down.vtysh}
 
+
+Перехват RIP-сообщений на маршрутизаторе \textbf{r5}
+\inputmintedbr{text}{../../results/r5.r2-down.ripcatch}
 \end{document}

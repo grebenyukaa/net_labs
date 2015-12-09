@@ -30,47 +30,47 @@
 \section{Назначение IP-адресов}
 \begin{itemize}
 \item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r1}.
-\lstinputlisting{../../net/r1/etc/network/interfaces}
+\inputmintedbr{text}{../../net/r1/etc/network/interfaces}
 \item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r2}.
-\lstinputlisting{../../net/r2/etc/network/interfaces}
+\inputmintedbr{text}{../../net/r2/etc/network/interfaces}
 \item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r3}.
-\lstinputlisting{../../net/r3/etc/network/interfaces}
+\inputmintedbr{text}{../../net/r3/etc/network/interfaces}
 \item Ниже приведён файл настройки протокола IP маршрутизатора \textbf{r4}.
-\lstinputlisting{../../net/r4/etc/network/interfaces}
+\inputmintedbr{text}{../../net/r4/etc/network/interfaces}
 
 \item Ниже приведён файл настройки протокола IP рабочей станции \textbf{ws1}.
-\lstinputlisting{../../net/ws1/etc/network/interfaces}
+\inputmintedbr{text}{../../net/ws1/etc/network/interfaces}
 \item Ниже приведён файл настройки протокола IP рабочей станции \textbf{ws2}.
-\lstinputlisting{../../net/ws2/etc/network/interfaces}
+\inputmintedbr{text}{../../net/ws2/etc/network/interfaces}
 \item Ниже приведён файл настройки протокола IP рабочей станции \textbf{ws3}.
-\lstinputlisting{../../net/ws3/etc/network/interfaces}
+\inputmintedbr{text}{../../net/ws3/etc/network/interfaces}
 \end{itemize}
 
 
 \section{Таблица маршрутизации}
 \begin{itemize}
 \item Таблица маршрутизации \textbf{r1}.
-\lstinputlisting{../../results/r1.route}
+\inputmintedbr{text}{../../results/r1.route}
 
 \item Таблица маршрутизации \textbf{r2}.
-\lstinputlisting{../../results/r2.route}
+\inputmintedbr{text}{../../results/r2.route}
 
 \item Таблица маршрутизации \textbf{r3}.
-\lstinputlisting{../../results/r3.route}
+\inputmintedbr{text}{../../results/r3.route}
 
 \item Таблица маршрутизации \textbf{r4}.
-\lstinputlisting{../../results/r4.route}
+\inputmintedbr{text}{../../results/r4.route}
 \end{itemize}
 
 
 \section{Проверка настройки сети}
 \begin{itemize}
 \item Вывод \textbf{traceroute} от узла \textbf{ws1} до \textbf{ws2} при нормальной работе сети.
-\lstinputlisting{../../results/ws12.trace}
+\inputmintedbr{text}{../../results/ws12.trace}
 \item Вывод \textbf{traceroute} от узла \textbf{ws1} до \textbf{ws3} при нормальной работе сети.
-\lstinputlisting{../../results/ws13.trace}
+\inputmintedbr{text}{../../results/ws13.trace}
 \item Вывод \textbf{traceroute} от узла \textbf{ws2} до \textbf{ws3} при нормальной работе сети.
-\lstinputlisting{../../results/ws23.trace}
+\inputmintedbr{text}{../../results/ws23.trace}
 \end{itemize}
 
 
@@ -102,13 +102,13 @@
 
 \begin{itemize}
 \item Таблица маршрутизации \textbf{r1}.
-\lstinputlisting{../../results/r1.route}
+\inputmintedbr{text}{../../results/r1.route}
 
 \item Таблица маршрутизации \textbf{r2}.
-\lstinputlisting{../../results/r2.route}
+\inputmintedbr{text}{../../results/r2.route}
 
 \item Таблица маршрутизации \textbf{r3}.
-\lstinputlisting{../../results/r3.route}
+\inputmintedbr{text}{../../results/r3.route}
 \end{itemize}
 
 Показаны опыты после стирания кеша ARP.
@@ -116,81 +116,81 @@
 
 
 \textbf{ws1} выполняет команду
-\begin{lstlisting}
+\begin{minted}{text}
 ping 10.0.40.2 -c 1
-\end{lstlisting}
+\end{minted}
 
 По таблице маршрутизации вычисляется, что \textbf{ws1} не имеет возможности непосредственно отправить ICMP-запрос в подсеть 10.0.40.0/24. Поэтому ICMP-запрос отпраляется на маршрутизатор, IP-адрес которого известен из таблицы маршрутизации, но неизвестен MAC-адрес. Для определения MAC-адреса отправляется широковещательный ARP-запрос в интерфейс eth0, на который приходит ответ от \textbf{r2}.
-\lstinputlisting{../../results/indirect_routing/ws1.eth0.log}
+\inputmintedbr{text}{../../results/indirect_routing/ws1.eth0.log}
 
 Аналогичным образом \textbf{r2} широковещательным ARP-запросом опрашивает интерфейс eth1(исходя из таблицы маршрутищации) и получает ответ от \textbf{r1} c его MAC-адресом, что позволяет направить ICMP-запрос (c TTL-1) далее.
-\lstinputlisting{../../results/indirect_routing/r2.eth1.log}
+\inputmintedbr{text}{../../results/indirect_routing/r2.eth1.log}
 
 Аналогичным образом \textbf{r1} отправляет ICMP-запрос на \textbf{r3}.
-\lstinputlisting{../../results/indirect_routing/r2.eth0.log}
-\lstinputlisting{../../results/indirect_routing/r1.eth0.log}
+\inputmintedbr{text}{../../results/indirect_routing/r2.eth0.log}
+\inputmintedbr{text}{../../results/indirect_routing/r1.eth0.log}
 
 Аналогичным образом \textbf{r3} отпрявляет ICMP-запрос на \textbf{ws2}
-\lstinputlisting{../../results/indirect_routing/r1.eth1.log}
-\lstinputlisting{../../results/indirect_routing/r3.eth0.log}
+\inputmintedbr{text}{../../results/indirect_routing/r1.eth1.log}
+\inputmintedbr{text}{../../results/indirect_routing/r3.eth0.log}
 
 \textbf{ws2} получает ICMP-запрос и отправляет ICMP-ответ. На обратном пути следования ответа нет необходимости направлять широковещательные ARP-запросы для поиска MAC-адресов, т.к. ARP-кеш является заполненным.
-\lstinputlisting{../../results/indirect_routing/ws2.eth0.log}
+\inputmintedbr{text}{../../results/indirect_routing/ws2.eth0.log}
 
 \section{Продолжительность жизни пакета}
 Добавим кольцо между \textbf{r1} и \textbf{r2}:
-\lstinputlisting{../../results/ttl_test/break_r1.sh}
+\inputmintedbr{text}{../../results/ttl_test/break_r1.sh}
 
 Получим таблицу маршрутизации \textbf{r1}:
-\lstinputlisting{../../results/ttl_test/r1.route}
+\inputmintedbr{text}{../../results/ttl_test/r1.route}
 
 Отправим ICMP-запрос c \textbf{ws1} на \textbf{ws2}:
-\lstinputlisting{../../results/ttl_test/ws1.cmd.log}
+\inputmintedbr{text}{../../results/ttl_test/ws1.cmd.log}
 
 Воспользуемся командой tcpdump:
 \textbf{ws1}:
-\lstinputlisting{../../results/ttl_test/ws1.eth0.log}
+\inputmintedbr{text}{../../results/ttl_test/ws1.eth0.log}
 \textbf{r2.eth1}:
-\lstinputlisting{../../results/ttl_test/r2.eth1.log}
+\inputmintedbr{text}{../../results/ttl_test/r2.eth1.log}
 \textbf{r2.eth0}:
-\lstinputlisting{../../results/ttl_test/r2.eth0.log}
+\inputmintedbr{text}{../../results/ttl_test/r2.eth0.log}
 \textbf{r1}:
-\lstinputlisting{../../results/ttl_test/r1.eth0.log}
+\inputmintedbr{text}{../../results/ttl_test/r1.eth0.log}
 
 \textbf{r1} отправил сообщение о превышении времени жизни.
 
 \section{Изучение IP-фрагментации}
 \textbf{ws1}
-\begin{lstlisting}
+\begin{minted}{text}
 ip l set mtu 500 dev eth0
-\end{lstlisting}
+\end{minted}
 
 \textbf{r2}
-\begin{lstlisting}
+\begin{minted}{text}
 ip l set mtu 500 dev eth1
-\end{lstlisting}
+\end{minted}
 % Напоминаем, что PMTU следует отключить!
 
 \textbf{r1}
-\begin{lstlisting}
+\begin{minted}{text}
 ping 10.0.30.2 -c 1 -s 1000
-\end{lstlisting}
+\end{minted}
 
 Вывод \textbf{tcpdump} на маршрутизаторе \textbf{r2} перед сетью с уменьшенным MTU.
-\lstinputlisting{../../results/mtu_test/r2.eth1.log}
+\inputmintedbr{text}{../../results/mtu_test/r2.eth1.log}
 
 Вывод \textbf{tcpdump} на маршрутизаторе \textbf{r2} после сети с уменьшенным MTU.
-\lstinputlisting{../../results/mtu_test/r2.eth0.log}
+\inputmintedbr{text}{../../results/mtu_test/r2.eth0.log}
 
 Вывод \textbf{tcpdump} на узле получателя \textbf{ws1}.
-\lstinputlisting{../../results/mtu_test/ws1.eth0.log}
+\inputmintedbr{text}{../../results/mtu_test/ws1.eth0.log}
 
 
 \section{Отсутствие сети}
-\lstinputlisting{../../results/network_ureachable}
+\inputmintedbr{text}{../../results/network_ureachable}
 
 
 \section{Отсутствие IP-адреса в сети}
-\lstinputlisting{../../results/destination_unreachable}
+\inputmintedbr{text}{../../results/destination_unreachable}
 
 \end{document}

@@ -5,6 +5,6 @@
 \contentsline {section}{\numberline {4}Проверка настройки сети}{5}{section.4}
 \contentsline {section}{\numberline {5}Маршрутизация}{6}{section.5}
 \contentsline {section}{\numberline {6}Продолжительность жизни пакета}{9}{section.6}
-\contentsline {section}{\numberline {7}Изучение IP-фрагментации}{10}{section.7}
-\contentsline {section}{\numberline {8}Отсутствие сети}{11}{section.8}
-\contentsline {section}{\numberline {9}Отсутствие IP-адреса в сети}{11}{section.9}
+\contentsline {section}{\numberline {7}Изучение IP-фрагментации}{11}{section.7}
+\contentsline {section}{\numberline {8}Отсутствие сети}{13}{section.8}
+\contentsline {section}{\numberline {9}Отсутствие IP-адреса в сети}{13}{section.9}

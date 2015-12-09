@@ -1,0 +1,13 @@
+root@r5:~/ripcatch# ./ripcatch32
+        AFI 2 addr 10.0.20.0/24, tag 0x0000, metric 1,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.30.0/24, tag 0x0000, metric 1,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.50.0/24, tag 0x0000, metric 2,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.60.0/24, tag 0x0000, metric 3,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.10.0/24, tag 0x0000, metric 1,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.30.0/24, tag 0x0000, metric 1,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.40.0/24, tag 0x0000, metric 2,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.50.0/24, tag 0x0000, metric 2,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.60.0/24, tag 0x0000, metric 3,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.20.0/24, tag 0x0000, metric 1,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.40.0/24, tag 0x0000, metric 1,  nexthop: 0.0.0.0
+        AFI 2 addr 10.0.50.0/24, tag 0x0000, metric 2,  nexthop: 0.0.0.0
