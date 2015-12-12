@@ -1,0 +1,16 @@
+19:20:05.686249 IP 10.10.0.2.54474 > 10.50.0.2.9: Flags [S], seq 3052735652, win 14600, options [mss 1460,sackOK,TS val 4294941021 ecr 0,nop,wscale 2], length 0
+19:20:05.686529 IP 10.50.0.2.9 > 10.10.0.2.54474: Flags [S.], seq 3965002350, ack 3052735653, win 14480, options [mss 1460,sackOK,TS val 15706 ecr 4294941021,nop,wscale 2], length 0
+19:20:05.686579 IP 10.10.0.2.54474 > 10.50.0.2.9: Flags [.], ack 1, win 3650, options [nop,nop,TS val 4294941021 ecr 15706], length 0
+19:20:08.985039 IP 10.10.0.2.54474 > 10.50.0.2.9: Flags [F.], seq 1, ack 1, win 3650, options [nop,nop,TS val 4294941351 ecr 15706], length 0
+19:20:08.985328 IP 10.50.0.2.9 > 10.10.0.2.54474: Flags [F.], seq 1, ack 2, win 3620, options [nop,nop,TS val 16036 ecr 4294941351], length 0
+19:20:08.985370 IP 10.10.0.2.54474 > 10.50.0.2.9: Flags [.], ack 2, win 3650, options [nop,nop,TS val 4294941351 ecr 16036], length 0
+19:20:13.546200 IP 10.10.0.2.54475 > 10.50.0.2.9: Flags [S], seq 2234991961, win 14600, options [mss 1460,sackOK,TS val 4294941806 ecr 0,nop,wscale 2], length 0
+19:20:13.546579 IP 10.50.0.2.9 > 10.10.0.2.54475: Flags [S.], seq 3690269800, ack 2234991962, win 14480, options [mss 1460,sackOK,TS val 16492 ecr 4294941806,nop,wscale 2], length 0
+19:20:13.546703 IP 10.10.0.2.54475 > 10.50.0.2.9: Flags [.], ack 1, win 3650, options [nop,nop,TS val 4294941807 ecr 16492], length 0
+19:20:13.697883 IP 10.10.0.2.54475 > 10.50.0.2.9: Flags [.], seq 1:1449, ack 1, win 3650, options [nop,nop,TS val 4294941822 ecr 16492], length 1448
+19:20:13.697896 IP 10.10.0.1 > 10.10.0.2: ICMP 10.50.0.2 unreachable - need to frag (mtu 1492), length 556
+19:20:13.697981 IP 10.10.0.2.54475 > 10.50.0.2.9: Flags [.], seq 1:1441, ack 1, win 3650, options [nop,nop,TS val 4294941822 ecr 16492], length 1440
+19:20:13.697992 IP 10.10.0.2.54475 > 10.50.0.2.9: Flags [.], seq 1441:1449, ack 1, win 3650, options [nop,nop,TS val 4294941822 ecr 16492], length 8
+19:20:13.698119 IP 10.20.0.2 > 10.10.0.2: ICMP 10.50.0.2 unreachable - need to frag (mtu 576), length 556
+19:20:13.698368 IP 10.50.0.2.9 > 10.10.0.2.54475: Flags [.], ack 1, win 3620, options [nop,nop,TS val 16507 ecr 4294941807,nop,nop,sack 1 {1441:1449}], length 0
+19:20:13.698451 IP 10.10.0.2.54475 > 10.50.0.2.9: Flags [.], seq 1:525, ack 1, win 3650, options [nop,nop,TS val 4294941822 ecr 16507], length 524

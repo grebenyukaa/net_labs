@@ -1,0 +1,6 @@
+IP 10.20.0.1.35614 > 10.50.0.2.9: Flags [S], seq 4177652366, win 14520, options [mss 1452,sackOK,TS val 68755 ecr 0,nop,wscale 2], length 0
+IP 10.50.0.2.9 > 10.20.0.1.35614: Flags [S.], seq 3097162115, ack 4177652367, win 14480, options [mss 536,sackOK,TS val 68772 ecr 68755,nop,wscale 2], length 0
+IP 10.20.0.1.35614 > 10.50.0.2.9: Flags [.], ack 1, win 3630, options [nop,nop,TS val 68755 ecr 68772], length 0
+IP 10.20.0.1.35614 > 10.50.0.2.9: Flags [F.], seq 1, ack 1, win 3630, options [nop,nop,TS val 69195 ecr 68772], length 0
+IP 10.50.0.2.9 > 10.20.0.1.35614: Flags [F.], seq 1, ack 2, win 3620, options [nop,nop,TS val 69210 ecr 69195], length 0
+IP 10.20.0.1.35614 > 10.50.0.2.9: Flags [.], ack 2, win 3630, options [nop,nop,TS val 69195 ecr 69210], length 0

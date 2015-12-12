@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{../../../tex/common/header.tex}
+
+\title{Отчёт по лабораторной работе \\ <<Механизмы протокола TCP>>}
+\author{Гребенюк Александр Андреевич}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+% Текст отчёта должен быть читаемым!!! Написанное здесь является рыбой.
+
+\clearpage
+\section{Установка и разрыв соединения}
+Установка соединения между \textbf{c2}(telnet) и \textbf{с6}(discard). Дампим на \textbf{c3}
+\inputmintedbr{text}{../../results/c3.eth0.dump}
+
+\clearpage
+\section{Окно получателя}
+Передача данных от \textbf{c1} до \textbf{c4} с дампом на \textbf{c3}:
+\inputmintedbr{text}{../../results/c4.win}
+
+\clearpage
+\section{Окно отправителя}
+Передача данных от \textbf{c1} до \textbf{c5}(c установленным delay 100ms) с дампом на \textbf{c2.eth0}:
+\inputmintedbr{text}{../../results/c1.win}
+
+\clearpage
+\section{Нейгл и Мишналь}
+Передача данных от \textbf{c1} до \textbf{c5}(c установленным delay 500ms) с дампом на \textbf{c2.eth0}:
+\inputmintedbr{text}{../../results/nagle.log}
+
+\clearpage
+\section{Аггрессивная буферизация}
+Передача данных от \textbf{c1} до \textbf{c5}(c установленным delay 500ms) с дампом на \textbf{c2.eth0}:
+\inputmintedbr{text}{../../results/cork.log}
+
+\clearpage
+\section{Отправка без задержки}
+Передача данных от \textbf{c1} до \textbf{c5}(c установленным delay 1000ms) с дампом на \textbf{c2.eth0}:
+\inputmintedbr{text}{../../results/nodelay.log}
+
+\clearpage
+\section{Быстрый повтор}
+Передача данных от \textbf{c1} до \textbf{c6} с дампом на \textbf{c3.eth0}:
+\inputmintedbr{text}{../../results/early_retry.log}
+
+\clearpage
+\section{Обычный повтор}
+Передача данных от \textbf{c1}(delay 100) до \textbf{c6} с дампом на \textbf{c3.eth0}(delay 300):
+\inputmintedbr{text}{../../results/no_early_retry.log}
+
+\clearpage
+\section{Опыт с PMTU}
+Передача данных от \textbf{c1} до \textbf{c6} с дампом на \textbf{c2.eth0}:
+\inputmintedbr{text}{../../results/pmtu.log}
+
+\clearpage
+\section{Соединение с неверным портом}
+Попытка передачи данных от \textbf{c1} до \textbf{c6:10} с дампом на \textbf{c2.eth0}:
+\inputmintedbr{text}{../../results/no-port.log}
+\end{document}

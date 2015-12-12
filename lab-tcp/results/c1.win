@@ -1,0 +1,20 @@
+17:21:11.312960 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 1:101, ack 1, win 3650, options [nop,nop,TS val 148322 ecr 96758], length 100
+17:21:11.323208 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 101:201, ack 1, win 3650, options [nop,nop,TS val 148323 ecr 96758], length 100
+17:21:11.333312 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 201:301, ack 1, win 3650, options [nop,nop,TS val 148324 ecr 96758], length 100
+17:21:11.343492 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 301:401, ack 1, win 3650, options [nop,nop,TS val 148325 ecr 96758], length 100
+17:21:11.353724 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 401:501, ack 1, win 3650, options [nop,nop,TS val 148326 ecr 96758], length 100
+17:21:11.364025 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 501:601, ack 1, win 3650, options [nop,nop,TS val 148327 ecr 96758], length 100
+17:21:11.374114 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 601:701, ack 1, win 3650, options [nop,nop,TS val 148328 ecr 96758], length 100
+17:21:11.384259 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 701:801, ack 1, win 3650, options [nop,nop,TS val 148329 ecr 96758], length 100
+17:21:11.394407 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 801:901, ack 1, win 3650, options [nop,nop,TS val 148330 ecr 96758], length 100
+17:21:11.404531 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 901:1001, ack 1, win 3650, options [nop,nop,TS val 148331 ecr 96758], length 100
+17:21:11.414728 IP 10.40.0.2.9 > 10.10.0.2.47440: Flags [.], ack 101, win 3620, options [nop,nop,TS val 96768 ecr 148322], length 0
+17:21:11.414813 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 1001:1101, ack 1, win 3650, options [nop,nop,TS val 148332 ecr 96768], length 100
+17:21:11.424914 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 1101:1201, ack 1, win 3650, options [nop,nop,TS val 148333 ecr 96768], length 100
+17:21:11.435120 IP 10.40.0.2.9 > 10.10.0.2.47440: Flags [.], ack 201, win 3620, options [nop,nop,TS val 96769 ecr 148323], length 0
+17:21:11.435127 IP 10.40.0.2.9 > 10.10.0.2.47440: Flags [.], ack 301, win 3620, options [nop,nop,TS val 96770 ecr 148324], length 0
+17:21:11.435203 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 1201:1301, ack 1, win 3650, options [nop,nop,TS val 148334 ecr 96769], length 100
+17:21:11.445333 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 1301:1401, ack 1, win 3650, options [nop,nop,TS val 148335 ecr 96770], length 100
+17:21:11.455411 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 1401:1501, ack 1, win 3650, options [nop,nop,TS val 148336 ecr 96770], length 100
+17:21:11.465502 IP 10.10.0.2.47440 > 10.40.0.2.9: Flags [P.], seq 1501:1601, ack 1, win 3650, options [nop,nop,TS val 148337 ecr 96770], length 100
+17:21:11.475712 IP 10.40.0.2.9 > 10.10.0.2.47440: Flags [.], ack 401, win 3620, options [nop,nop,TS val 96771 ecr 148325], length 0

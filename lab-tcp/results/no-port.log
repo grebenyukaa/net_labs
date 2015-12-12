@@ -1,0 +1,2 @@
+19:27:10.866781 IP 10.10.0.2.49598 > 10.50.0.2.10: Flags [S], seq 824893507, win 14600, options [mss 1460,sackOK,TS val 4294942054 ecr 0,nop,wscale 2], length 0
+19:27:10.867320 IP 10.50.0.2.10 > 10.10.0.2.49598: Flags [R.], seq 0, ack 824893508, win 0, length 0
