@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Arch Linux) (preloaded format=xelatex 2015.10.21)  12 DEC 2015 21:32
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Arch Linux) (preloaded format=xelatex 2015.10.21)  12 DEC 2015 21:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1467,10 +1467,9 @@ r.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makea
 tother\\endinput\n \"); f.close();")...executed.
 
  (./report.mintedmd5)
-(./_minted-report/bdfb729ff113b167b649d988408c12ee12e3fa88.pygtex [11
+(./_minted-report/46c1c718e47f95b27de3fd6ecf87213d7d6feeb5.pygtex) [11
 
-] [12])
-[13]
+]
 \openout5 = `report.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"report
@@ -1480,11 +1479,12 @@ n(\"report.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + ha
 sher.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\ma
 keatother\\endinput\n \"); f.close();")...executed.
 
- (./report.mintedmd5)
-(./_minted-report/bdfb729ff113b167b649d988408c12ee12e3fa88.pygtex [14
 
-] [15])
-[16]
+(./report.mintedmd5)
+(./_minted-report/8c4a80523c6a0ab31b99d66dbfb5fb859cefd3b2.pygtex [12
+
+])
+[13]
 \openout5 = `report.mintedcmd'.
 
 runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"report
@@ -1495,7 +1495,7 @@ gest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\
 \endinput\n \"); f.close();")...executed.
 
  (./report.mintedmd5)
-(./_minted-report/bc689dfbc4a3e51399825ffa8a74dcf41d7c2160.pygtex) [17
+(./_minted-report/bc689dfbc4a3e51399825ffa8a74dcf41d7c2160.pygtex) [14
 
 ]
 \openout5 = `report.mintedcmd'.
@@ -1514,7 +1514,7 @@ runsystem(rm "report.mintedcmd")...executed.
 
 runsystem(rm "report.mintedmd5")...executed.
 
- [18
+ [15
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
@@ -1525,12 +1525,12 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 37880 strings out of 493706
- 769931 string characters out of 6150887
+ 37884 strings out of 493706
+ 770133 string characters out of 6150887
  849408 words of memory out of 5000000
- 40637 multiletter control sequences out of 15000+600000
+ 40639 multiletter control sequences out of 15000+600000
  6458 words of font info for 64 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  57i,9n,76p,10465b,577s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (18 pages).
+Output written on report.pdf (15 pages).
