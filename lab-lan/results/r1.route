@@ -1,0 +1,6 @@
+root@r1:~# ip r
+default via 172.16.1.2 dev eth1 
+10.10.0.0/16 dev eth0  proto kernel  scope link  src 10.10.0.1 
+10.20.0.0/16 via 10.100.100.2 dev tun0  proto zebra  metric 2 
+10.100.100.2 dev tun0  proto kernel  scope link  src 10.100.100.1 
+172.16.0.0/16 dev eth1  proto kernel  scope link  src 172.16.1.3 

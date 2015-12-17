@@ -1,0 +1,26 @@
+10:10:10:10:10:ba > ff:ff:ff:ff:ff:ff, ethertype IPv4 (0x0800), length 342: (tos 0x10, ttl 128, id 0, offset 0, flags [none], proto UDP (17), length 328)
+    0.0.0.0.68 > 255.255.255.255.67: BOOTP/DHCP, Request from 10:10:10:10:10:ba, length 300, xid 0x809ae340, Flags [none]
+          Client-Ethernet-Address 10:10:10:10:10:ba
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message Option 53, length 1: Request
+            Server-ID Option 54, length 4: 10.10.0.1
+            Requested-IP Option 50, length 4: 10.10.1.1
+            Hostname Option 12, length 4: "ws11"
+            Parameter-Request Option 55, length 13: 
+              Subnet-Mask, BR, Time-Zone, Default-Gateway
+              Domain-Name, Domain-Name-Server, Option 119, Hostname
+              Netbios-Name-Server, Netbios-Scope, MTU, Classless-Static-Route
+              NTP
+da:40:3e:6d:e6:8c > 10:10:10:10:10:ba, ethertype IPv4 (0x0800), length 342: (tos 0x10, ttl 128, id 0, offset 0, flags [none], proto UDP (17), length 328)
+    10.10.0.1.67 > 10.10.1.1.68: BOOTP/DHCP, Reply, length 300, xid 0x809ae340, Flags [none]
+          Your-IP 10.10.1.1
+          Client-Ethernet-Address 10:10:10:10:10:ba
+          Vendor-rfc1048 Extensions
+            Magic Cookie 0x63825363
+            DHCP-Message Option 53, length 1: ACK
+            Server-ID Option 54, length 4: 10.10.0.1
+            Lease-Time Option 51, length 4: 43200
+            Subnet-Mask Option 1, length 4: 255.255.0.0
+            Default-Gateway Option 3, length 4: 10.10.0.1
+            Domain-Name-Server Option 6, length 4: 10.10.0.1

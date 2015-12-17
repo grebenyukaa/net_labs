@@ -13,74 +13,70 @@
 
 % Текст отчёта должен быть читаемым!!! Написанное здесь является рыбой.
 
+\clearpage
 \section{Получение адреса по DHCP}
 
-Где что дампим (дампить с -tenv -s 1000).
+Получение ``случайного'' адреса \textbf{ws21} (дамп на \textbf{r2}):
+\inputmintedbr{text}{../../results/ws21-dhcplease.log}
 
-\begin{Verbatim}
-получение "случайного" адреса
-\end{Verbatim}
-
-Где что дампим.
-
-\begin{Verbatim}
-получение "фиксированого" адреса
-\end{Verbatim}
+Получение ``фиксированного'' адреса \textbf{ws11} (дамп на \textbf{r1}):
+\inputmintedbr{text}{../../results/ws11-dhcplease.log}
 
 
+\clearpage
 \section{Использование VPN}
 
-\begin{Verbatim}
-ip r на маршрутизаторе после VPN и работы RIP
-\end{Verbatim}
+Маршрутизатор \textbf{r1}:
+\inputmintedbr{text}{../../results/r1.route}
 
-\begin{Verbatim}
-ip -4 a  на маршрутизаторе
-\end{Verbatim}
+\inputmintedbr{text}{../../results/r1-ipv4-a.log}
 
-\begin{Verbatim}
-просшулка сообщений RIP на tun0
-\end{Verbatim}
+\inputmintedbr{text}{../../results/r1-rip.tun0.log}
 
 Проверка работы VPN
 
-\begin{Verbatim}
-Трейс с ws21 до s11
-\end{Verbatim}
+\inputmintedbr{text}{../../results/ws21-s11.trace}
 
+
+\clearpage
 \section{Правила фильтации пакетов и трансляции пдресов}
 
 Где что дампим. 
 
-\begin{Verbatim}
+%\begin{Verbatim}
 сценарий фильтрации
-\end{Verbatim}
+%\end{Verbatim}
 
-\begin{Verbatim}
+%\begin{Verbatim}
 iptables -L -nv
-\end{Verbatim}
+%\end{Verbatim}
 
-\begin{Verbatim}
+%\begin{Verbatim}
 iptables -L -nv -t nat
-\end{Verbatim}
+%\end{Verbatim}
 
+
+\clearpage
 \section{Проверка трансляции SNAT}
 
 Где что дампим.
 
-\begin{Verbatim}
+%\begin{Verbatim}
 дамп SNAT в LAN (как вариант -i any tcp)
-\end{Verbatim}
+%\end{Verbatim}
 
-\begin{Verbatim}
+%\begin{Verbatim}
 дамп SNAT (снаружи)
-\end{Verbatim}
+%\end{Verbatim}
 
 
+\clearpage
 \section{Проверка правил фильтрации}
 
 Используем telnet.
 
+
+\clearpage
 \section{Проверка доступа к внутреннему серверу}
 
 Используем telnet / веб-браузер на реальной машине. 
