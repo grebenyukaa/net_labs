@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Arch Linux) (preloaded format=xelatex 2015.10.21)  17 DEC 2015 20:17
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Arch Linux) (preloaded format=xelatex 2015.10.21)  26 DEC 2015 16:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1447,34 +1447,118 @@ other\\endinput\n \"); f.close();")...executed.
 
 
 (./report.mintedmd5)
-(./_minted-report/f74216fabf2caa2a2ad58ca6dd4b803251e69dee.pygtex) [5] [6
+(./_minted-report/f74216fabf2caa2a2ad58ca6dd4b803251e69dee.pygtex) [5]
+\openout5 = `report.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"report
+.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../../res
+ults/firewall\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"report
+.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.hexdi
+gest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatother\
+\endinput\n \"); f.close();")...executed.
+
+
+(./report.mintedmd5)
+(./_minted-report/da6e96c599944d450a2769037f965234dccdf91d.pygtex)
+\openout5 = `report.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"report
+.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../../res
+ults/firewall.log\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"re
+port.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.h
+exdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatot
+her\\endinput\n \"); f.close();")...executed.
+
+
+(./report.mintedmd5)
+(./_minted-report/9d7fc9469d4bbbb97adcd3e9b93c5ba8e1272a68.pygtex)
+\openout5 = `report.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"report
+.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../../res
+ults/firewall.nat.log\", \"rb\"); hasher.update(f.read()); f.close(); f = open(
+\"report.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hash
+er.hexdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\make
+atother\\endinput\n \"); f.close();")...executed.
+
+
+(./report.mintedmd5)
+(./_minted-report/907433fa8af33b378228a22f7b7e1d89597feb90.pygtex [6
+
+]) [7]
+\openout5 = `report.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"report
+.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../../res
+ults/snat.in.log\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"rep
+ort.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.he
+xdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatoth
+er\\endinput\n \"); f.close();")...executed.
+
+
+(./report.mintedmd5)
+(./_minted-report/b9e04a71775f4e964ba2c72b0a0b12a4a2f60ef2.pygtex)
+\openout5 = `report.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"report
+.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../../res
+ults/snat.out.log\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"re
+port.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.h
+exdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatot
+her\\endinput\n \"); f.close();")...executed.
+
+
+(./report.mintedmd5)
+(./_minted-report/2f5ba1cc2d70e970664269f23f3b028694281145.pygtex [8
+
+]) [9]
+\openout5 = `report.mintedcmd'.
+
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"report
+.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../../res
+ults/snat.telnet\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"rep
+ort.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.he
+xdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatoth
+er\\endinput\n \"); f.close();")...executed.
+
+
+(./report.mintedmd5)
+(./_minted-report/efe3725384999f16bb089f5820822822fe6c7aea.pygtex) [10
 
 ]
-[7
+\openout5 = `report.mintedcmd'.
 
-] [8
+runsystem(python -c "import hashlib; hasher = hashlib.sha1(); f = open(\"report
+.mintedcmd\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"../../res
+ults/dnat.telnet\", \"rb\"); hasher.update(f.read()); f.close(); f = open(\"rep
+ort.mintedmd5\", \"w\"); macro = \"\\edef\\minted@hash\" + chr(123) + hasher.he
+xdigest() + chr(125) + \"\"; f.write(\"\\makeatletter\" + macro + \"\\makeatoth
+er\\endinput\n \"); f.close();")...executed.
 
-]
+
+(./report.mintedmd5)
+(./_minted-report/3ef54b583e192ba7b18841be5d994c23d590b34c.pygtex)
 runsystem(rm "report.mintedcmd")...executed.
 
 runsystem(rm "report.mintedmd5")...executed.
 
- [9
+ [11
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
- (./report.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 85.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 85.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
+
+(./report.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 37860 strings out of 493706
- 769089 string characters out of 6150887
- 842967 words of memory out of 5000000
- 40635 multiletter control sequences out of 15000+600000
+ 37902 strings out of 493706
+ 770916 string characters out of 6150887
+ 846310 words of memory out of 5000000
+ 40642 multiletter control sequences out of 15000+600000
  6458 words of font info for 64 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  57i,9n,76p,10465b,577s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (9 pages).
+Output written on report.pdf (11 pages).

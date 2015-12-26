@@ -48,7 +48,8 @@ int main(int ac, char *av[])
         sleep(delay);
 
     char buf[1024];
-    while (recv(fd, buf, sizeof(buf), 0) > 0 && --max_packets);
+    while (recv(fd, buf, sizeof(buf), 0) > 0 && --max_packets)
+        sleep(100000000);
 
     return 0;
 }
