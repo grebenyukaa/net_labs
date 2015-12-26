@@ -1,0 +1,1 @@
+cd /home/amadeus/netkit-labs/lab-lan/net && lstart -d . r1 && sleep 5 && lstart -d . r2 && lstart -d . s11 && lstart -d . s12 && lstart -d . ws11 && lstart -d . ws12 && lstart -d . ws13 && lstart -d . 21

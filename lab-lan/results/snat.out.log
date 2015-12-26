@@ -1,0 +1,14 @@
+IP 10.20.0.3.47456 > 10.10.1.1.discard: Flags [S], seq 3948338987, win 14600, options [mss 1460,sackOK,TS val 132988 ecr 0,nop,wscale 2], length 0
+IP 10.20.0.3.60211 > 10.20.0.1.domain: 44820+ PTR? 1.1.10.10.in-addr.arpa. (40)
+IP 10.20.0.1.domain > 10.20.0.3.60211: 44820 Refused 0/0/0 (40)
+IP 10.20.0.3.36353 > 10.20.0.1.domain: 44820+ PTR? 1.1.10.10.in-addr.arpa. (40)
+IP 10.10.1.1.discard > 10.20.0.3.47456: Flags [S.], seq 643029704, ack 3948338988, win 14480, options [mss 1366,sackOK,TS val 160341 ecr 132988,nop,wscale 2], length 0
+IP 10.20.0.3.47456 > 10.10.1.1.discard: Flags [.], ack 1, win 3650, options [nop,nop,TS val 132988 ecr 160341], length 0
+IP 10.20.0.1.domain > 10.20.0.3.36353: 44820 Refused 0/0/0 (40)
+IP 10.20.0.3.47456 > 10.10.1.1.discard: Flags [P.], seq 1:11, ack 1, win 3650, options [nop,nop,TS val 133196 ecr 160341], length 10
+IP 10.10.1.1.discard > 10.20.0.3.47456: Flags [.], ack 11, win 3620, options [nop,nop,TS val 160549 ecr 133196], length 0
+IP 10.20.0.1.route > 224.0.0.9.route: RIPv2, Response, length: 44
+ARP, Request who-has 10.20.0.3 tell 10.20.0.1, length 28
+ARP, Reply 10.20.0.3 is-at 10:10:10:10:10:ee (oui Unknown), length 28
+IP 10.20.0.3.47456 > 10.10.1.1.discard: Flags [F.], seq 11, ack 1, win 3650, options [nop,nop,TS val 133598 ecr 160549], length 0
+IP 10.10.1.1.discard > 10.20.0.3.47456: Flags [F.], seq 1, ack 12, win 3620, options [nop,nop,TS val 160950 ecr 133598], length 0

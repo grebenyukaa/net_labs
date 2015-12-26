@@ -1,0 +1,9 @@
+[amadeus@amadea net]$ telnet 172.16.1.3 9
+Trying 172.16.1.3...
+Connected to 172.16.1.3.
+Escape character is '^]'.
+
+lklk;klk
+^]
+telnet> q
+Connection closed.

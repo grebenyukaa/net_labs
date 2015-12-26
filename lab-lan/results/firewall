@@ -1,0 +1,26 @@
+#!/bin/sh
+LAN=eth0
+INET=eth1
+VPN=tun0
+# Удаление всех правил в таблице "filter" (по-умолчанию).
+iptables -F
+# Удаление правил в таблице "nat" (её надо указать явно).
+iptables -F -t nat
+
+iptables -X
+
+iptables --policy FORWARD DROP
+
+iptables -A FORWARD -p icmp -j ACCEPT
+iptables -A FORWARD -i $VPN -j ACCEPT
+iptables -A FORWARD -o $VPN -j ACCEPT
+
+iptables -A FORWARD -p tcp -i $LAN -o $INET -j ACCEPT
+iptables -A FORWARD -p tcp --dport 9 -i $INET -j ACCEPT
+iptables -t nat -A PREROUTING -p tcp -m tcp --dport 9 -i $INET -j DNAT --to 10.10.1.1
+
+iptables -t nat -A POSTROUTING -j MASQUERADE
+
+iptables -A FORWARD -m state --state NEW -o $INET -j ACCEPT
+iptables -A FORWARD -m state --state ESTABLISHED -i $INET -j ACCEPT
+iptables -A FORWARD -p UDP --dport 53 -o $INET -j ACCEPT

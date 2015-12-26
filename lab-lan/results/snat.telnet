@@ -1,0 +1,8 @@
+root@ws11:~# telnet ya.ru 80
+Trying 213.180.193.3...
+Connected to ya.ru.
+Escape character is '^]'.
+qwerty
+^]
+telnet> q
+Connection closed.
