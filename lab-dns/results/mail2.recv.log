@@ -1,0 +1,24 @@
+From root@profit.abc Sun Jan 10 22:45:21 2016
+Return-path: <root@profit.abc>
+Envelope-to: root@success.xyz
+Delivery-date: Sun, 10 Jan 2016 22:45:21 +0100
+Received: from [2.3.1.5] (helo=mail1)
+        by mail2 with esmtp (Exim 4.80)
+        (envelope-from <root@profit.abc>)
+        id 1aINnd-0000pj-BI
+        for root@success.xyz; Sun, 10 Jan 2016 22:45:21 +0100
+Received: from root by mail1 with local (Exim 4.80)
+        (envelope-from <root@profit.abc>)
+        id 1aINnd-0000oM-8j
+        for root@success.xyz; Sun, 10 Jan 2016 22:45:21 +0100
+Date: Sun, 10 Jan 2016 22:45:21 +0100
+To: root@success.xyz
+Subject: 123456789
+User-Agent: Heirloom mailx 12.5 6/20/10
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <E1aINnd-0000oM-8j@mail1>
+From: root <root@profit.abc>
+
+987654321

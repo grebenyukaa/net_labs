@@ -1,0 +1,1 @@
+root@mail2:/# echo "123456789" | mail -s "98765421" root@profit.abc

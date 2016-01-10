@@ -1,0 +1,113 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{../../../tex/common/header.tex}
+
+\title{Отчёт по лабораторной работе \\ <<Система доменных имён>>}
+\author{Гребенюк Александр Андреевич}
+
+\begin{document}
+
+\maketitle
+
+\clearpage
+\tableofcontents
+
+\clearpage
+\section{Настройка системы DNS}
+
+\subsection{Топология сети}
+
+Топология сети и использыемые IP-адреса показаны на рис.~\ref{fig:network}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{includes/network_gv.pdf}
+\caption{Топология сети}
+\label{fig:network}
+\end{figure}
+
+\subsection{Структура службы доменных имён}
+
+Структура авторитетных серверов доменных имён показана на рис.~\ref{fig:dns}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{includes/dns_gv.pdf}
+\caption{Структура службы доменных имён}
+\label{fig:dns}
+\end{figure}
+
+\subsection{Прочие настройки}
+
+Кеширующие DNS-серверы
+\begin{itemize}
+\item \textbf{r1}
+\end{itemize}
+
+Развёрнутые SMTP-серверы и используемые ими кеширующие DNS-серверы.
+\begin{itemize}
+\item \textbf{mail1} использует сервер на \textbf{r1};
+\item \textbf{mail2} использует сервер на \textbf{r1};
+\end{itemize}
+
+
+\clearpage
+\section{Проверка настройки службы доменных имён}
+
+\subsection{Проверка настройки записи типа A для домена mail.profit.abc}
+
+\textbf{dnsr}
+\inputmintedbr{text}{../../results/dnsr.dig}
+
+
+\clearpage
+\textbf{dnsz1}
+\inputmintedbr{text}{../../results/dnsz1.dig}
+
+
+\clearpage
+\textbf{dnsz2}
+\inputmintedbr{text}{../../results/dnsz2.dig}
+
+
+\clearpage
+\textbf{dns1}
+\inputmintedbr{text}{../../results/dns1.dig}
+
+
+\clearpage
+Итоговая проверка: опрашиваем кеширующий DNS-сервер.
+\inputmintedbr{text}{../../results/r1.dig}
+
+
+Пинг с \textbf{r1}
+\inputmintedbr{text}{../../results/ping.log}
+
+
+\clearpage
+\section{Проверка работы почтовой системы}
+
+\subsection{Проверка MX-записи для домена \textbf{profit.abc}}
+
+С узла \textbf{mail2} отправили письмо на локальный SMTP-сервер для адресата с адресом \textbf{root@profit.abc}
+
+\inputmintedbr{text}{../../results/mail2.send.log}
+
+На машине с доменным именем \textbf{mail1} появилось доставленное письмо.
+\inputmintedbr{text}{../../results/mail1.recv.log}
+
+Таким образом, доменная запись типа MX для домена \textbf{profit.abc} настроена верно.
+
+\clearpage
+\subsection{Проверка MX-записи для домена \textbf{success.xyz}}
+
+С узла \textbf{mail1} отправили письмо на локальный SMTP-сервер для адресата с адресом \textbf{root@success.xyz}
+
+\inputmintedbr{text}{../../results/mail1.send.log}
+
+На машине с доменным именем \textbf{mail2} появилось доставленное письмо.
+\inputmintedbr{text}{../../results/mail2.recv.log}
+
+Таким образом, доменная запись типа MX для домена \textbf{success.xyz} настроена верно.
+
+\end{document}

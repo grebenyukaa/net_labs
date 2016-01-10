@@ -1,0 +1,18 @@
+root@mail1:~# dig mail.profit.abc A 
+
+; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> mail.profit.abc A
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 50933
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;mail.profit.abc.               IN      A
+
+;; ANSWER SECTION:
+mail.profit.abc.        83664   IN      A       2.3.1.5
+
+;; Query time: 4 msec
+;; SERVER: 10.0.0.1#53(10.0.0.1)
+;; WHEN: Sun Jan 10 22:36:57 2016
+;; MSG SIZE  rcvd: 49
